@@ -1,0 +1,59 @@
+<!-- 角色管理-->
+<template>
+    <div>
+        <h2>角色管理页面</h2>
+        <!-- 引入面包屑层级路径 -->
+        <el-breadcrumb separator-class="el-icon-arrow-right">
+        <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+        <el-breadcrumb-item >角色管理</el-breadcrumb-item>
+        </el-breadcrumb>
+        <el-button type="primary" class="addbtn">添加角色</el-button>
+        <el-table
+    :data="tableData"
+    stripe
+    style="width: 100%">
+    <el-table-column
+        prop="date"
+        label="日期"
+            width="180">
+        </el-table-column>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+</template>
+
+<script>
+export default {
+    data () {
+        return {
+    };
+    },
+
+    components: {},
+
+    computed: {},
+
+    mounted(){},
+
+    methods: {}
+}
+
+</script>
+<style  scoped>
+h2{
+    margin-bottom: 20px;
+}
+.addbtn{
+    margin-top: 20px;
+}
+</style>
