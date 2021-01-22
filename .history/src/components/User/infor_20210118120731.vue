@@ -1,0 +1,59 @@
+<!--  -->
+<template>
+    <div>
+        <h2>
+            角色管理添加页面
+        </h2>
+        <el-breadcrumb separator-class="el-icon-arrow-right" class="lead">
+            <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/user'}">管理员管理</el-breadcrumb-item>
+            <el-breadcrumb-item>管理员添加</el-breadcrumb-item>
+        </el-breadcrumb>
+        <el-form style="width:500px;" label-width="100px">
+            <el-form-item  label="所属角色"> 
+                <el-select>
+                    <el-option></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item label="用户名">
+                <el-input></el-input>
+            </el-form-item>
+            <el-form-item label="密码">
+                <el-input type="password"></el-input>
+            </el-form-item>
+            
+        </el-form>
+    </div>
+</template>
+
+<script>
+export default {
+    data () {
+        return {
+            infor:{
+                roleid:"",
+                username:"",
+                password:"",
+                
+            }
+    };
+    },
+
+    components: {},
+
+    computed: {},
+
+    mounted(){},
+
+    methods: {}
+}
+
+</script>
+<style  scoped>
+h2{
+    margin-bottom: 20px;
+}
+.lead{
+    margin-bottom: 10px;
+}
+</style>
